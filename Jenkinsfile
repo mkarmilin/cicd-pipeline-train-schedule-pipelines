@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo 'My feature branch'
                 sh './gradlew build'
             }
         }
