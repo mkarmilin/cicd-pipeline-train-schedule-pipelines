@@ -10,7 +10,6 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'dist/trainSchedule.zip', fingerprint: true
-            junit 'build/reports/**/*.xml'
         }
     }
 }
